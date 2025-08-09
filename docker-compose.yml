@@ -5,10 +5,10 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
-      - "5555:5555"
+      - "3005:3000"
+      - "5560:5555"
     environment:
-      - DATABASE_URL=postgresql://postgres:postgres@db:5432/bookly
+      - DATABASE_URL=postgresql://postgres:postgres@db:5440/bookly
     depends_on:
       - db
     volumes:
